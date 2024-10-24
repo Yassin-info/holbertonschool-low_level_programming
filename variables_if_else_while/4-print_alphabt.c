@@ -1,16 +1,16 @@
-#include <stdio.h>
-/**
-* main - Entry point 
-* Return: Always 0 (Success) 
-*/
+#include <unistd.h>
+
 int main(void)
 {
-char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
+char letter = 'a';
+
+while (letter <= 'z')
 {
-if (letter != 'e' && letter != 'q')
+if (letter != 'q' && letter != 'e')
 putchar(letter);
+letter++;
 }
 putchar('\n');
+
 return (0);
 }
