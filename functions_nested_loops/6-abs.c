@@ -1,14 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 /**
-* _abs - Computes the absolute value of an integer
-* @n: The integer to check
+* main - check the code
 *
-* Return: The absolute value of n
+* Return: Always 0.
 */
-int _abs(int n)
+int main(void)
 {
-if (n < 0)
-return -n;  // Return the negation if n is negative
-else
-return n;   // Return n if it is already positive or zero
+int r;
+r = _abs(-1);
+printf("%d\n", r);
+r = _abs(0);
+printf("%d\n", r);
+r = _abs(1);
+printf("%d\n", r);
+r = _abs(-98);
+printf("%d\n", r);
+return (0);
 }
