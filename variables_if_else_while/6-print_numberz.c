@@ -1,16 +1,16 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int miain(void)
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
+int n;
+for (n = 48; n < 58; n++)
 {
-putchar("%d", i);
+putchar(n);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
