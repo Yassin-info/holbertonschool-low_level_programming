@@ -2,13 +2,12 @@
 
 int main(void)
 {
-char letter = 'a';
+char letter;
 
-while (letter <= 'z')
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-if (letter != 'q' && letter != 'e')
+if (letter != 'e' && letter != 'q')
 putchar(letter);
-letter++;
 }
 putchar('\n');
 
