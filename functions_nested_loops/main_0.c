@@ -1,17 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 /**
-* test_isalpha - Tests the _isalpha function
+* main - check the code
+*
+* Return: Always 0.
 */
-void test_isalpha(void)
+int main(void)
 {
 int r;
-r = _isalpha('H');
-_putchar(r + '0');
-r = _isalpha('o');
-_putchar(r + '0');
-r = _isalpha(108); // ASCII for 'l'
-_putchar(r + '0');
-r = _isalpha(';'); // Not an alphabetic character
-_putchar(r + '0');
-_putchar('\n');
+r = _abs(-1);
+printf("%d\n", r);
+r = _abs(0);
+printf("%d\n", r);
+r = _abs(1);
+printf("%d\n", r);
+r = _abs(-98);
+printf("%d\n", r);
+return (0);
 }
