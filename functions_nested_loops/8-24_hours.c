@@ -1,34 +1,22 @@
 #include "main.h"
 /**
-* times_table - Prints the 9 times table, starting with 0
+* jack_bauer - Prints every minute of the day
+*
+* Description: Prints time in format HH:MM from 00:00 to 23:59
 */
-void times_table(void)
+void jack_bauer(void)
 {
-int i, j, result;
-for (i = 0; i <= 9; i++)
+int hour, minute;
+for (hour = 0; hour < 24; hour++)
 {
-for (j = 0; j <= 9; j++)
+for (minute = 0; minute < 60; minute++)
 {
-result = i * j;
-if (j == 0)
-{
-_putchar('0');
-}
-else if (result < 10)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(result + '0');
-}
-else
-{
-_putchar(',');
-_putchar(' ');
-_putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
-}
-}
+_putchar((hour / 10) + '0');
+_putchar((hour % 10) + '0');
+_putchar(':');
+_putchar((minute / 10) + '0');
+_putchar((minute % 10) + '0');
 _putchar('\n');
+}
 }
 }
