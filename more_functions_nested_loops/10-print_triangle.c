@@ -5,7 +5,7 @@
 */
 void print_triangle(int size)
 {
-int row, column, space;
+int row, column;
 if (size <= 0)
 {
 _putchar('\n');
@@ -13,10 +13,13 @@ return;
 }
 for (row = 1; row <= size; row++)
 {
-for (space = size - row; space > 0; space--)
+for (column = 1; column <= size; column++)
+{
+if (column <= size - row)
 _putchar(' ');
-for (column = 1; column <= row; column++)
+else
 _putchar('#');
+}
 _putchar('\n');
 }
 }
