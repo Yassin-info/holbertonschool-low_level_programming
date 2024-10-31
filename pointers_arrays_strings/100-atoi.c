@@ -1,50 +1,35 @@
 #include "main.h"
+#include <limits.h>  /* Pour INT_MAX et INT_MIN */
 /**
-* _strcpy - Copies the string pointed to by src to dest
-* @dest: Pointer to the destination buffer
-* @src: Pointer to the source string
+* _atoi - convertit une chaîne en entier
+* @s: chaîne à convertir
 *
-* Return: Pointer to dest
-*/
-char *_strcpy(char *dest, char *src)
-{
-int i = 0;
-while (src[i] != '\0')
-{
-dest[i] = src[i];
-i++;
-}
-dest[i] = '\0';
-return (dest);
-}
-1:15
-#include "main.h"
-/**
-* _atoi - Converts a string to an integer
-* @s: The string to convert
-*
-* Return: The integer value of the converted string
+* Return: l'entier converti
 */
 int _atoi(char *s)
 {
-int sign = 1;
 int result = 0;
+int sign = 1;
 int i = 0;
-while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
+/* Ignorer les caractères non numériques au début */
+while (s[i] != '\0')
 {
 if (s[i] == '-')
 sign *= -1;
+else if (s[i] >= '0' && s[i] <= '9')
+break; /* Sortir de la boucle dès qu'un chiffre est trouvé */
 i++;
 }
+/* Convertir les chiffres en entier */
 while (s[i] >= '0' && s[i] <= '9')
 {
-if (result > INT_MAX / 10 ||
-(result == INT_MAX / 10 && s[i] - '0' > INT_MAX % 10))
+/* Vérifier le débordement */
+if (result > (INT_MAX - (s[i] - '0')) / 10)
 {
 return (sign == 1 ? INT_MAX : INT_MIN);
 }
 result = result * 10 + (s[i] - '0');
 i++;
 }
-return (result *sign);
+return (result * sign);
 }
