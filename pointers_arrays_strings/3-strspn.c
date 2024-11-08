@@ -1,5 +1,4 @@
-#include "main.h"
-/**
+#include "main.h"/**
 * _strspn - Gets the length of a prefix substring
 * @s: The string to be scanned
 * @accept: The string containing the characters to match
@@ -10,22 +9,22 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int count = 0;
-int is_accept;
+int found;
 char *a;
 while (*s)
 {
-is_accept = 0;
+found = 0;
 for (a = accept; *a; a++)
 {
 if (*s == *a)
 {
-is_accept = 1;
-break;
+found = 1;
+break; 
 }
 }
-if (is_accept == 0)
+if (found == 0)
 break;
-count++;
+count++; 
 s++;
 }
 return count;
