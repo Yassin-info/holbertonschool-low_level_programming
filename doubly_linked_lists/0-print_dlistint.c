@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* print_dlistint - Prints all elements of a dlistint_t list
-* @h: Pointer to the head of the list
+* print_dlistint - Imprime tous les éléments d'une liste dlistint_t
+* @h: Pointeur vers la tête de la liste
 *
-* Return: The number of nodes in the list
+* Return: Le nombre de nœuds
 */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -15,5 +15,5 @@ printf("%d\n", h->n);
 h = h->next;
 count++;
 }
-return count;
+return (count);
 }
