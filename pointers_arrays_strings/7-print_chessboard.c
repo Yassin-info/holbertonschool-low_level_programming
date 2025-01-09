@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* print_chessboard - Prints the chessboard
-* @a: 2D array representing the chessboard
+* print_chessboard - Affiche l'échiquie
+* @a: Tableau 2D représentant l'échiqui
 */
 void print_chessboard(char (*a)[8])
 {
