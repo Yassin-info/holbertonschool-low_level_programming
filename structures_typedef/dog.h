@@ -1,14 +1,12 @@
 #ifndef DOG_H
 #define DOG_H
 /**
+* struct dog - Structure représentant un chien
+* @name: Nom du chien
+* @age: Âge du chien
+* @owner: Nom du propriétaire du chien
 *
-* struct dog - A structure representing a dog
-* @name: The name of the dog
-* @age: The age of the dog
-* @owner: The owner of the dog
-*
-* Description: This structure contains information about a dog,
-* including its name, age, and owner.
+* Description: Cette structure contient les informations de base d'un chien
 */
 struct dog
 {
@@ -16,9 +14,12 @@ char *name;
 float age;
 char *owner;
 };
-/* Define dog_t as a new name for struct dog */
-void free_dog(dog_t *d);
-dog_t *new_dog(char *name, float age, char *owner);
+/* Typedef pour struct dog */
 typedef struct dog dog_t;
-/* You can keep any function prototypes here if you have any */
+/* Prototypes des fonctions */
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+void free_dog(dog_t *d);
 #endif /* DOG_H */
