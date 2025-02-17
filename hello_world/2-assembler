@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get the base name of the C file (without the .c extension)
+base_name=$(basename "$CFILE" .c)
+
+# Generate assembly code and save it to a .s file
+gcc -S "$CFILE" -o "${base_name}.s"
