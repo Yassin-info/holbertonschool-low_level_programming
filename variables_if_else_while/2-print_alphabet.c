@@ -4,13 +4,13 @@
 *
 * Return: Always 0 (Success)
 */
-int main (void)
-int i;
+int main(void)
 {
+int i;
 for (i = 0; i < 26; i++)
 {
 putchar(97 + i);
 }
 putchar(10);
-return(0);
+return (0);
 }
