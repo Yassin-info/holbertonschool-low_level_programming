@@ -1,9 +1,9 @@
-#include<stdio.h>
-#include"main.h"
+#include <stdio.h>
+#include "main.h"
 /**
 * main - Entry point
 *
-* Return: Always 0 (Success)
+* Return: 0 (Success)
 */
 int main(void)
 {
@@ -15,6 +15,6 @@ _putchar('c');
 _putchar('h');
 _putchar('a');
 _putchar('r');
-_putchar('/n');
+_putchar('\n');
 return (0);
 }
