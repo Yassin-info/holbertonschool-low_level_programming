@@ -17,7 +17,7 @@ for (row = 1; row <= size; row++)
 {
 for (space = size - row; space > 0; space--)
 _putchar(' ');
-for ( col = 1; col <= row; col++)
+for (col = 1; col <= row; col++)
 _putchar('#');
 _putchar('\n');
 }
