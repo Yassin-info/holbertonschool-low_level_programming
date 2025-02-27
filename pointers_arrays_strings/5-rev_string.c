@@ -5,7 +5,11 @@
 */
 void rev_string(char *s)
 	{
-		int len = 0;
-		while (s[len] != '\0')
+		int start = 0;
+		int end = 0;
+		char temp;
+		while (s[end] != '\0')
 			{
-				len 
+				end++;
+				}
+
