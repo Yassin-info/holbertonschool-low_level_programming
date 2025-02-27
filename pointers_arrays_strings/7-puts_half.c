@@ -1,23 +1,38 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * puts_half - Prints half of the string
- * @str: String
+ * puts_half - function should print the second half of the string
+ *
+ * @str: address de "0" dans "0123456789"
+ *
+ * Return: void
  */
+
 void puts_half(char *str)
 {
-	int i, n;
-	int s_size = _strlen(str);
+	int len;
+	int start;
+	int i;
 
-	if (s_size % 2 == 0)
-		n = s_size / 2;
-	else
-		n = (s_size + 1) / 2;
-
-	for (i = n; i != s_size; i++)
+	for (len = 0; str[len] != '\0'; len++)
 	{
-		if (i >= n)
-			_putchar(str[i]);
+
 	}
+
+	if (len % 2 == 0)
+	{
+		start = len / 2;
+	}
+
+	else
+	{
+		start = (len + 1) / 2;
+	}
+
+	for (i = start; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+
 	_putchar('\n');
 }
