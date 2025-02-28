@@ -10,7 +10,6 @@ char *cap_string(char *s)
 {
 	int i = 0;
 	int capitalize = 1;
-	char separators[] = " \t\n,;.!?\"(){}";
 	while (s[i] != '\0')
 		{
 			if (capitalize && (s[i] >= 'a' && s[i] <= 'z'))
@@ -32,6 +31,7 @@ char *cap_string(char *s)
 							capitalize = 0;
 							}
 					}
-			return (s);
+			i++;
 			}
+	return (s);
 }
