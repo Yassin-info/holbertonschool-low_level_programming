@@ -19,7 +19,9 @@ if (*s == *a)
 {
 return (s);
 }
+a++;
+}
+s++;
 }
 return (NULL);
-}
 }
