@@ -19,7 +19,7 @@ while (*p)
 {
 if (*s == *p)
 {
-count ++;
+count++;
 break;
 }
 p++;
