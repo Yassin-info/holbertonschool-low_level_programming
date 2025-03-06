@@ -7,14 +7,14 @@
 * Return: &haystack[i] si tte la sting est = à needle et 0 sinon
 */
 char *_strstr(char *haystack, char *needle)
-{	
+{
 int i;
 int j;
 for (i = 0; haystack[i] != '\0'; i++)
 {
 if (*needle == '\0')
 return (haystack);
-if (haystack[i] == needle[0])	
+if (haystack[i] == needle[0])
 {
 for (j = 0; needle[j] != '\0'; j++)
 {
