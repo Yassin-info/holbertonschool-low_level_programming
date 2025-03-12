@@ -10,7 +10,7 @@
  *
  * Return: Nothing.
  */
-void print_grid(int **grid, int width, int height)
+void print_grid(int **grid, int width, int height);
 {
     int w;
     int h;
