@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/** If malloc fails, terminates process with status 98
-* It ensures that memory allocation is successful,
-* and if not, it terminates the program with a specific
-* exit status, providing a safety net for memory allocation
+/**
+* malloc_checked - Allocates memory using malloc
+* @b: Number of bytes to allocate
+*
+* Return: Pointer to allocated memory
+* Description: Exits with status 98 if allocation fails
 */
 void *malloc_checked(unsigned int b)
 {
