@@ -27,7 +27,7 @@ return (NULL);
 
 for (l = min, i = 0; l <= max; l++, i++)
 {
-y[i] = i;
+y[i] = l;
 }
 
 return (y);
