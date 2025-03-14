@@ -21,6 +21,6 @@ return (NULL);
 c = malloc(nmemb * size);
 
 if (c == NULL)
-return (NULL);
 
 }
+return (NULL);
