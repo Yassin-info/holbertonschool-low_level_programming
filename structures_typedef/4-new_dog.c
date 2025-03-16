@@ -10,7 +10,7 @@
 char *copy_string(char *str)
 {
 	char *n;
-	int i;
+	int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
