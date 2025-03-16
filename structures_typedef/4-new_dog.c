@@ -44,13 +44,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	new_dog = malloc(sizeof(dog_t));
-	
+	if (new_dog == NULL)
+		return (NULL);
+
 	new_dog->name = copy_string(name);
 	if (new_dog->name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
+
+	new_dog->age = age;
 
 	new_dog->owner = copy_string(owner);
 	if (new_dog->owner == NULL)
