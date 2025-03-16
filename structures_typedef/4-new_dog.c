@@ -28,3 +28,37 @@ char *copy_string(char *str)
 	n[len] = '\0';
 	return (n);
 }
+/**
+ * new_dog - Creates a new dog
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ * Return: Pointer to the new dog_t, or NULL if it fails
+ */
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	dog_t *new_dog;
+
+	if (name == NULL || owner == NULL)
+		return (NULL);
+
+	new_dog = malloc(sizeof(dog_t));
+	
+	new_dog->name = copy_string(name);
+	if (new_dog->name == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
+
+	new_dog->owner = copy_string(owner);
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
+
+	return (new_dog);
+}
