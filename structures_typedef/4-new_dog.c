@@ -1,5 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * copy_string - Allocates memory and copies a string
  * @str: The string to copy
