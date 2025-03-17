@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
-* print_name_as_is - prints a name as is
+* print_name - Prints a name using a function pointer
 * @name: name of the person
 * @f: Pointer to the printing function to use
 * Return: Nothing.
