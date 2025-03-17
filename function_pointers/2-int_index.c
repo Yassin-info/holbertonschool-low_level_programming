@@ -7,7 +7,6 @@
 *
 * Description: Applies comparison function to each array element
 *              until a match is found. Validates inputs first.
-* 
 * Return: Index of first element where cmp() != 0,
 *         -1 if no match/size <=0/NULL params
 */
@@ -18,7 +17,7 @@ if (array == NULL || cmp == NULL || size <= 0)
 return (-1);
 for (i = 0; i < size; i++)
 {
-if((*cmp)(array[i]) != 0)
+if ((*cmp)(array[i]) != 0)
 return (i);
 }
 return (-1);
