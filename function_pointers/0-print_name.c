@@ -10,5 +10,5 @@
 void print_name(char *name, void (*f)(char *))
 {
     char *yassin;
-    printf (%s);
+    printf("%s", name);
 }
