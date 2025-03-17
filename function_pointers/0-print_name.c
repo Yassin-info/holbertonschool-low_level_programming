@@ -9,7 +9,6 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-    char *name;
-    print_name ("name");
-    return;
+    char *yassin;
+    printf ("name");
 }
