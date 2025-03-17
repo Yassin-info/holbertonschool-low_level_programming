@@ -9,6 +9,5 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-    char *diogo;
     printf("%s", name);
 }
