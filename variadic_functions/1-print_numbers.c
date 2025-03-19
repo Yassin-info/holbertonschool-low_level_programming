@@ -7,9 +7,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
     int i;
     for (i = 0; i < n; i++)
     {
-        print ("%d separator \n" i)
+        printf ("%d separator \n" i);
     }
-    while (separator != NULL)
+    if (separator != NULL)
     i++;
 
     else
