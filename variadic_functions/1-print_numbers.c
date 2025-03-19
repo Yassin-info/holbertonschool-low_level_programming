@@ -4,10 +4,10 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-    int i;
+     unsigned int i;
     for (i = 0; i < n; i++)
     {
-        printf ("%d separator \n" i);
+        printf ("%d separator \n", i);
     }
     if (separator != NULL)
     i++;
