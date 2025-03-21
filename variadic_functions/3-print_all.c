@@ -18,9 +18,24 @@ void print_all(const char * const format, ...)
 				printf("%c", va_arg(args, int));
 				printed = 1;
 				break;
-			case 'i':
+			
+            case 'i':
 				printf("%d", va_arg(args, int));
 				printed = 1;
+				break;
+            
+            case 'f':
+				printf("%f", va_arg(args, double));
+				printed = 1;
+				break;
+			
+            case 's':
+				s = va_arg(args, char *);
+				printf("%s", s ? s : "(nil)");
+				printed = 1;
+				break;
+			
+                default:
 				break;
                 }
 		i++;
