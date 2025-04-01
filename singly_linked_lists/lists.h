@@ -9,9 +9,12 @@
 #include <unistd.h>
 
 /**
-* main - Entry point for testing linked list functions
+* struct list_s - Singly linked list
+* @str: String (malloc'ed string)
+* @len: Length of the string
+* @next: Pointer to the next node
 *
-* Return: Always 0 (Success)
+* Description: Node structure for a singly linked list.
 */
 
 typedef struct list_s
