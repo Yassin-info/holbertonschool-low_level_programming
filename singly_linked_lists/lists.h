@@ -8,6 +8,12 @@
 #include <stddef.h>
 #include <unistd.h>
 
+/**
+* main - Entry point for testing linked list functions
+*
+* Return: Always 0 (Success)
+*/
+
 typedef struct list_s
 {
 char *str;
