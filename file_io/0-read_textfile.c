@@ -39,11 +39,9 @@ if (nwritten == -1 || nwritten != nread)
 {
 free(buffer);
 close(fd);
-
 return (0);
 }
 free(buffer);
 close(fd);
-
 return (nwritten);
 }
