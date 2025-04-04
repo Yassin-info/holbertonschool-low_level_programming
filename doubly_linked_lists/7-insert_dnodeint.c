@@ -1,7 +1,10 @@
 #include "lists.h"
 /**
- * 
- */
+* delete_dnodeint_at_index - deletes node at index of a dlistint_t linked list
+* @head: pointer to pointer to the head of the list
+* @index: index of the node to delete
+* Return: 1 if succeeded, -1 if failed
+*/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 dlistint_t *new_node, *current;
