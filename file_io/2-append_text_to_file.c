@@ -1,6 +1,9 @@
 #include "main.h"
 /**
-* 
+* append_text_to_file - append_text_to_file
+* @filename: pointer to name of file.
+* @text_content: content of the file
+* Return: -1, 1
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
